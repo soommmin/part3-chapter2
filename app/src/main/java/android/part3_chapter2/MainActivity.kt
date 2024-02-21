@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openVerifySms() {
-       // startActivity(Intent(this, IdentityInputActivity::class.java))
+        startActivity(Intent(this, IdentityInputActivity::class.java))
     }
 
 
