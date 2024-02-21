@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openShuffle() {
-        //startActivity(Intent(this, PinActivity::class.java))
+        startActivity(Intent(this, PinActivity::class.java))
     }
 
     fun openVerifySms() {
