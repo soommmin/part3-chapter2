@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.part3_chapter2.databinding.ActivityMainBinding
+import android.part3_chapter2.util.AppSignatureHelper
+import android.util.Log
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.view = this
+        AppSignatureHelper(this).apply {
+            Log.d("hash", "hash : ${appSignature}")
+        }
     }
 
     fun openShuffle() {

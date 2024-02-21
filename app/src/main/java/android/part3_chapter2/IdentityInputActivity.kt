@@ -122,7 +122,7 @@ class IdentityInputActivity : AppCompatActivity() {
             return
         }
 
-        //startActivity(Intent(this, VerifyOtpActivity::class.java))
+        startActivity(Intent(this, VerifyOtpActivity::class.java))
     }
     private fun validName() = !binding.nameEdit.text.isNullOrBlank()
             && REGEX_NAME.toRegex().matches(binding.nameEdit.text!!)
